@@ -1,1 +1,107 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/bootstrap-4.3.1-dist/css/bootstrap.min.css';
+
+/*bootstrap was downloaded and added to styles folder. link to guide: https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/#2-installing-bootstrap-from-npm*/
+
+
+
+/* color theme
+#99d3df
+#88BBD6
+#cdcdcd
+#e9e9e9 */
+
+/* .grad {
+  background-image: linear-gradient(to bottom right,  #2aabe4, #4ea6cb);
+  padding: 0px 5px 5px 5px;
+  min-height: 650px;
+} */
+
+
+
+body {
+  background-color: #e9e9e9;
+}
+
+/* .table-hover {
+  width: 100%;
+} */
+
+/* .grayDiv {
+  background-color: #33393D;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px;
+
+
+} */
+
+/* .homeText {
+  padding-bottom: 10px;
+} */
+
+
+
+
+/* .right {
+  text-align: right;
+
+} */
+
+/* h4, h6 {
+  color: #9DC8E4;
+} */
+
+/* h6 {
+  font-style: italic
+} */
+
+.header {
+  /* width: 10px;
+  height: 2px;
+  position: relative; */
+  background-color: #cdcdcd;
+  text-align: right;
+  font-size: 12px;
+  /* animation-name: changer;
+  animation-duration: 6s;
+  animation-delay: 1s; */
+
+}
+
+/* @keyframes changer {
+  0%   {background-color:white; left:0%; top:0px;}
+  50%  {background-color:#2aabe4;  top:0px;}
+  100% {background-color: none; left: 95%; top:0px;}
+} */
+
+/* .body{
+  width: auto;
+  height: auto;
+  padding: 50px 0px 50px 0px;
+} */
+/* .footer {
+  width: 100%;
+  background-size:  auto;
+  padding-bottom: 20px;
+
+} */
+
+/* img {
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+} */
+
+/* .border-fade {
+
+  border-top: 3px;
+  border-bottom: 3px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color:#666B6E;
+  padding-bottom: 2px;
+
+} */

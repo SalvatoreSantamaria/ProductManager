@@ -1,9 +1,15 @@
-<div style="text-align:center">
-  <button [routerLink]="['/']">Home</button>
-  <button [routerLink]="['product-list']">Product Listings</button>
-  <button [routerLink]="['/product-creation']">Create a New Product</button>
-  <router-outlet></router-outlet>
-
+<div class="container">
+  <div style="text-align:center">
+    <div class="header">Globex Cake Products | 555-555-5555
+    </div>
+      <div class="body">
+        <button [routerLink]="['/']">Home</button>
+        <button [routerLink]="['product-list']">Product Listings</button>
+        <button [routerLink]="['/product-creation']">Create a New Product</button>
+        <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
   <!-- <div>
     <form (submit)="onSubmit()"> -->
   <!-- use the json pipe to see how newTask changes in real time -->
@@ -23,7 +29,7 @@
       <input type="submit" value="Create Product" />
     </form>
   </div> -->
-</div>
+
 <!-- <div>
   <p>Product List</p>
 </div>
