@@ -1,0 +1,17 @@
+<div>
+  <form (submit)="onSubmit()">
+    <!-- use the json pipe to see how newTask changes in real time -->
+    <p>{{ newProduct | json }}</p>
+    Product Title:
+    <input type="text" name="newProduct.title" [(ngModel)]="newProduct.title" />
+    Product Image:
+    <input type="text" name="newProduct.url" [(ngModel)]="newProduct.url" />
+    Product Price:
+    <input
+      type="number"
+      name="newProduct.price"
+      [(ngModel)]="newProduct.price"
+    />
+    <input type="submit" value="Create Product" />
+  </form>
+</div>
