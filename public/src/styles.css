@@ -96,9 +96,12 @@
   animation-delay: 1s; */
 }
 
+
+
 .globex {
   background-color:  #cdcdcd;
   text-align: bottom;
+
 }
 
  .spacer {
@@ -151,11 +154,11 @@ img {
   border-bottom-right-radius: 5px;
 }
 
-.col-md-1 {
+.col-1 {
   padding-right: 0px;
 }
 
-.col-md-11 {
+.col-11 {
   padding-left: 0px;
   padding-right: 0px;
 }
