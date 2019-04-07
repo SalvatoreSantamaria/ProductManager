@@ -1,15 +1,40 @@
 <div class="container">
-  <div style="text-align:left">
-    <div class="header">Globex Cake Products | 555-555-5555
-    </div>
-      <div class="body">
-        <button [routerLink]="['/']">Home</button>
+    <div class="row">
+        <div class="globex col-md-1">
+          <div class='spacer'></div>
+            <p class="globexText"> Globex </p>
+        </div>
+        <div class="body col-md-11">
+  <div class="right">
+      Globex Cake Products | 555-555-5555
+  </div>
+  <nav class="nav header">
+    <!-- <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a> -->
+    <a class="nav-link" [routerLink]="['/']">Home</a>
+    <a class="nav-link" [routerLink]="['product-list']">Product Listings</a>
+    <a class="nav-link" [routerLink]="['/product-creation']">Create a New Product</a>
+  </nav>
+
+
+
+
+      <!--
+  <div style="text-align:left"> -->
+
+
+        <!-- <button [routerLink]="['/']">Home</button>
         <button [routerLink]="['product-list']">Product Listings</button>
-        <button [routerLink]="['/product-creation']">Create a New Product</button>
+        <button [routerLink]="['/product-creation']">Create a New Product</button> -->
         <router-outlet></router-outlet>
       </div>
-  </div>
+    </div>
 </div>
+  <!--
+</div> -->
+
+
   <!-- <div>
     <form (submit)="onSubmit()"> -->
   <!-- use the json pipe to see how newTask changes in real time -->

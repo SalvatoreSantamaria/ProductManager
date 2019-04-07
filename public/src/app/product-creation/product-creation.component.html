@@ -1,41 +1,58 @@
+<div class="newProdText">
+    <p>&nbsp; Add new products to the catalog via this form.</p>
+  </div>
 <div class="container">
-  <div class="form-color">
+
+
+
+  <div class="form-group">
       <!-- <img src="assets/image/cupcake.jpg"> -->
-    <form (submit)="onSubmit()" #newForm="ngForm">
+    <form  (submit)="onSubmit()" #newForm="ngForm">
       <!-- use the json pipe to see how newTask changes in real time -->
       <!-- <p>{{ newProduct | json }}</p> -->
-      <div>
-      <label for="product title">Product Title</label>
-        <input
-        type="text"
-        name="newProduct.title"
-        required
-        minlength="3"
-        [(ngModel)]="newProduct.title" />
+
+
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="product title">Product Title</label>
+            <input
+            type="text"
+            class="form-control"
+            name="newProduct.title"
+            required
+            minlength="3"
+            [(ngModel)]="newProduct.title" />
       </div>
+
+      <div class="form-group col-md-6">
+        <label for="product price">Product Price</label>
+          <input
+            type="number"
+            class="form-control"
+            name="newProduct.price"
+            required
+            minlength="1"
+            [(ngModel)]="newProduct.price"
+            />
+      </div>
+    </div>
+
       <div>
-        <label for="product image">Product Image</label>
+        <label for="product image">Product Image URL</label>
           <input
           type="text"
+          class="form-control"
           name="newProduct.url"
           required
           minlength="3"
           [(ngModel)]="newProduct.url" />
       </div>
-      <div>
-      <label for="product price">Product Price</label>
-        <input
-          type="number"
-          name="newProduct.price"
-          required
-          minlength="1"
-          [(ngModel)]="newProduct.price"
-          />
-      </div>
+    <br>
+    <hr>
+    <br>
       <input type="submit" value="Create Product" />
     </form>
-      <div>
-        <p>Add new products to the catalog via this form.</p>
-      </div>
+
     </div>
 </div>

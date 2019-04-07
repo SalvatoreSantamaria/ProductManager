@@ -1,16 +1,57 @@
-<div>
-  <p>Cake Products List</p>
-</div>
-<div>
-  <p *ngFor="let product of products">
-    {{ product.title }} - {{ product.url }} - {{ product.price }}
-    <img src="{{ product.url }}" alt="" />
-    <button [routerLink]="['/product-edit', product._id]">
-      Edit Cake
-    </button>
+<div class="container">
+  <div>
+    <p>Globex Cake Products Listing.</p>
+  </div>
+  <div>
 
-    <button (click)="deleteTask(product._id)">Delete</button>
-  </p>
+
+
+
+
+    <!-- <p *ngFor="let product of products">
+      {{ product.title }} - {{ product.url }} - {{ product.price }}
+      <img src="{{ product.url }}" alt="" />
+      <button [routerLink]="['/product-edit', product._id]">
+        Edit Cake
+      </button>
+
+      <button (click)="deleteTask(product._id)">Delete</button>
+    </p> -->
+
+    <table class="table table-hover table-striped w-auto">
+        <thead>
+          <tr>
+            <th>Product ID</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <td>{{ product._id }}</td>
+            <td>{{ product.title }}</td>
+            <td>{{ product.price }}</td>
+            <td><img src="{{ product.url }}" alt="product" /></td>
+            <td>
+              <!-- <button class="btn btn-warning" [routerLink]="['/pets/', pet._id]"> Details</button>
+              <button class="btn btn-outline-warning" [routerLink]="['/pets/', pet._id, 'edit']">Edit</button></td> -->
+              <button [routerLink]="['/product-edit', product._id]">Edit</button>
+              <button (click)="deleteTask(product._id)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+  </div>
 </div>
 
 <!-- <div *ngIf="editProduct">
