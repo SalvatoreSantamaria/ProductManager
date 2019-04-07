@@ -23,6 +23,17 @@ body {
   background-color: #e9e9e9;
 }
 
+.form-color {
+  background-color: #88bbd6;
+}
+
+/* .triangle-topright {
+  /* width: 0;
+  height: 0; */
+ /* border-top: 5px solid #99d3df;
+  border-left: 100px solid transparent;
+} */
+
 /* .table-hover {
   width: 100%;
 } */
@@ -63,6 +74,7 @@ body {
   background-color: #cdcdcd;
   text-align: right;
   font-size: 12px;
+
   /* animation-name: changer;
   animation-duration: 6s;
   animation-delay: 1s; */

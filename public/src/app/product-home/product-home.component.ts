@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-home.component.css'],
 })
 export class ProductHomeComponent implements OnInit {
-  appTitle = 'Cake Product Management';
+  appTitle = 'Globex Cake Products';
   constructor() {}
 
   ngOnInit() {}
