@@ -17,6 +17,7 @@
           <input
             name="title"
             type="text"
+            class="form-control"
             required
             minlength="4"
             [(ngModel)]="product.title"
@@ -28,6 +29,7 @@
             <input
               name="price"
               type="number"
+              class="form-control"
               required
               minlength="1"
               [(ngModel)]="product.price"
@@ -35,17 +37,22 @@
         </div>
       </div>
 
-        <div>
+      <div class="form-row">
+        <div class="form-group col-md-9">
             <label for="url">URL</label>
             <input
               name="url"
               type="text"
+              class="form-control"
               required
               minlength="4"
               [(ngModel)]="product.url"
               #title="ngModel"
             />
-        </div>
+          </div>
+          <div class="form-group col-md-3"><img class="editImage" src="{{ product.url }}" alt="product" />
+          </div>
+      </div>
 
         <br>
         <hr>

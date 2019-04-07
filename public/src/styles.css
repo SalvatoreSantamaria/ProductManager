@@ -19,6 +19,10 @@
   min-height: 650px;
 } */
 
+.container {
+  min-width: 780px;
+}
+
 .newProdText {
   background-color: #898989;
   box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.75) inset;
@@ -66,6 +70,7 @@
  .right {
   text-align: right;
   background-color: #88bbd6;
+  padding-right: 5px;
 }
 
 /* h4, h6 {
@@ -134,6 +139,13 @@
 
 img {
   width: 50px;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.editImage {
+  width: 150px;
   height: auto;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
