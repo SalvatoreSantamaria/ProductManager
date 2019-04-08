@@ -9,7 +9,7 @@ export class Product {
     if (!data) {
       return;
     }
-    // do i need this?
+
     this.id = data._id;
     this.title = data.title;
     this.price = data.price;

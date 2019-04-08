@@ -11,18 +11,13 @@ export class ProductCreationComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   ngOnInit() {
-    // this.getProductsFromService();
     this.newProduct = { title: '', url: '', price: '' };
   }
 
   onSubmit() {
-    console.log(Date.now(), 'submitting');
     const observable = this.productService.addCake(this.newProduct);
     observable.subscribe(data => {
-      console.log('Got data from post', data);
       this.newProduct = { title: '', url: '', price: '' };
-      // this.getProductsFromService();
     });
-    console.log('Submitted');
   }
 }

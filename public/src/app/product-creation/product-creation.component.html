@@ -3,13 +3,7 @@
   </div>
 <div class="container">
   <div class="form-group">
-      <!-- <img src="assets/image/cupcake.jpg"> -->
     <form  (submit)="onSubmit()" #newForm="ngForm">
-      <!-- use the json pipe to see how newTask changes in real time -->
-      <!-- <p>{{ newProduct | json }}</p> -->
-
-
-
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="product title">Product Title</label>
@@ -19,9 +13,9 @@
             name="newProduct.title"
             required
             minlength="3"
+            placeholder="Minimum Length 3"
             [(ngModel)]="newProduct.title" />
       </div>
-
       <div class="form-group col-md-6">
         <label for="product price">Product Price</label>
           <input
@@ -30,11 +24,11 @@
             name="newProduct.price"
             required
             minlength="1"
+
             [(ngModel)]="newProduct.price"
             />
       </div>
     </div>
-
       <div>
         <label for="product image">Product Image URL</label>
           <input
@@ -43,13 +37,13 @@
           name="newProduct.url"
           required
           minlength="3"
+          placeholder="Minimum Length 3"
           [(ngModel)]="newProduct.url" />
       </div>
     <br>
     <hr>
     <br>
-      <input type="submit" value="Create Product" />
+      <input type="submit" [disabled]="newForm.invalid" value="Create Product" />
     </form>
-
     </div>
 </div>
